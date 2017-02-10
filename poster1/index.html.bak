@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>画廊</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onselectstart="return false;">
+	<!-- 画廊  2.改写-->
+	<div class='wrap' id="wrap">
+		<!-- 一张照片  负责平移旋转-->
+		<div class="photo photo_front" id="photo_{{index}}">
+			<!-- 负责翻转 -->
+			<div class="photo-wrap">
+				<!-- 照片正反面 -->
+				<div class="side side-front">
+					<p class="image"><img src="image/{{img}}"></p>
+					<p class="caption">{{caption}}</p>
+				</div>
+				<div class="side side-back">
+					<p class="desc">{{desc}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src='js/jquery-2.1.4.js'></script>
+	<script src='image/data.js'></script>
+	<script src='js/js.js'></script>
+</body>
+</html>
